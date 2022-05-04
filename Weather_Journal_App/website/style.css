@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.bg{
+    background-image: url("pexels-pixabay-206359.jpg");
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page{
+    background-color: rgba(255,255,255, 0.1);
+    /*Blackw/opacity/see-through*/z-index: 2;
+    position: absolute;
+    top: 50%;
+    margin-top: -408px;
+    left: 50%;
+    margin-left: -280px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.title::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 2px;
+}
+.formbox{
+    padding-top: 40px;
+    width: 500px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#entryHolder{
+    padding-top: 40px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
+    height: 30vh;
+}
+input[type = "text"]{
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #fafafa;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-left: 8px;
+}
+input[type = "text"]::placeholder{
+    color: black;
+    font-size: 14pt;
+    font-weight:bold;
+}
+textarea::placeholder{
+    color: black;
+    font-size: 14pt;
+    font-weight:bold;
+}
+textarea{
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 20pt;
+    padding: 8px;
+    background-color: #fafafa;
+    resize: none;
+    width: 400px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button[type="button"]{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: #fafafa;
+    font-size: 14pt;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+button[type="button"]:hover{
+    background-color: #ccc;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
